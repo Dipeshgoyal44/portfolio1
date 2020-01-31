@@ -4,6 +4,7 @@ body {
   overflow-x:hidden;
   font-family: 'Lato', sans-serif;
   color:#505962;
+ 
 }
 
 /* Navigation */
@@ -88,7 +89,7 @@ body {
 }
 .contact-form h3{
   margin-bottom: 8%;
-  margin-top: -15%;
+  margin-top: -25%;
   text-align: center;
   color: #0062cc;
 }
@@ -113,7 +114,28 @@ body {
   cursor: pointer;
 }
 
+.img-wrap{
+  width:80%;
+  height:80%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.img-wrap img {
+  width:60%;
+  padding:10px;
+  border-radius:50%;
+  box-shadow: 0 0 10px #999999;
+}
+@media (max-width: 575px) {
+  #about1{
+    width: 200%;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
@@ -128,7 +150,3 @@ Medium (md) devices (tablets, 768px and up)
 Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
 
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/

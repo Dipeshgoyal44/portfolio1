@@ -52,7 +52,7 @@
 		<div class="caption text-center">
 			<h1>Welcome to my website</h1>
 			<h3> Portfolio-Dipesh Goyal</h3>
-			<a class="btn btn-outline-light btn-lg" href="#course">Get Started</a>
+			
 		</div>
 		<!-- End Landing Page -->
 	</div>
@@ -61,15 +61,25 @@
 	<!-- Start About Section -->
 	<div id="about" class="offset">
 		<!-- Start Jumbotron -->
-		<div class="jumbotron">
-			<div class="narrow text-center">
-
-				<div class="col-12">
-					<h3 class="heading">About</h3>
-					<div class="heading-underline"></div>
-				</div>
-
-			</div> <!-- Narrow -->
+		<div class="jumbotron">					
+					<div class="aboutus">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="img-wrap">
+									<img src="img/about.jpg">
+								</div>
+								</div>
+								<div class="col-sm-5">	
+									<h2>About Me</h2>
+									<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+	
 		</div> <!-- Jumbotron -->
 
 	</div>
@@ -135,15 +145,38 @@
 					<div class="col-sm-4">
 
 						<div class="card">
-							<img class="card-img-top img-fluid" src="http://placehold.it/750x325" alt="Card image cap">
+							<img class="card-img-top img-fluid" src="img/weather.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h4 class="card-title">Project 1</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the
-									bulk of the card's content.</p>
+								<h4 class="card-title">Weather Application</h4>
+								<p class="card-text">Uses Node.Js to get data from the weather api to display
+									information to the user.
+									Still in development.
+								</p>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Frontend:</li>
-								<li class="list-group-item">Backend:</li>
+								<li class="list-group-item">Frontend: HTML,CSS,JS.</li>
+								<li class="list-group-item">Backend: Node.Js,Express.Js, HBS</li>
+								<li class="list-group-item"><a href="https://github.com/Dipeshgoyal44/weather-app"
+										class="card-link">View on Github</a></li>
+								<li class="list-group-item"><a href="https://dipesh-weather-app.herokuapp.com/"
+										class="card-link">View Live</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-sm-4">
+
+						<div class="card">
+							<img class="card-img-top img-fluid" src="img/p2.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Mean Stack Website</h4>
+								<p class="card-text">This website will be fully made with Mean stack. Not sure the
+									design or the concept of the website as of yet.</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Frontend: HTML,CSS,BS,Angular.Js,React.JS</li>
+								<li class="list-group-item">Backend: Node.Js,Express,MongoDB </li>
 								<li class="list-group-item"><a href="#" class="card-link">View on Github</a></li>
 								<li class="list-group-item"><a href="#" class="card-link">View Live</a></li>
 							</ul>
@@ -154,30 +187,12 @@
 					<div class="col-sm-4">
 
 						<div class="card">
-							<img class="card-img-top img-fluid" src="http://placehold.it/750x325" alt="Card image cap">
+							<img class="card-img-top img-fluid" src="img/p3.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h4 class="card-title">Project 2</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the
-									bulk of the card's content.</p>
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Frontend:</li>
-								<li class="list-group-item">Backend:</li>
-								<li class="list-group-item"><a href="#" class="card-link">View on Github</a></li>
-								<li class="list-group-item"><a href="#" class="card-link">View Live</a></li>
-							</ul>
-						</div>
-
-					</div>
-
-					<div class="col-sm-4">
-
-						<div class="card">
-							<img class="card-img-top img-fluid" src="http://placehold.it/750x325" alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Project 3</h4>
-								<p class="card-text">Some quick example text to build on the card title and make up the
-									bulk of the card's content.</p>
+								<h4 class="card-title">Professional Retail Website</h4>
+								<p class="card-text">This will be a professional retail website with a minimilistic
+									design comprised of the languages i learned previously.
+								</p>
 							</div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item">Frontend:</li>
@@ -194,84 +209,76 @@
 	<!-- End Projects Section -->
 	<!-- Start Contact Section -->
 	<div id="contact" class="offset">
-		<div class="container contact-form">
+		<div class="container contact-form text-center">
 			<form method="post">
-				<h3>Drop Us a Message</h3>
-				<div class="row">
-					<div class="col-md-6">
+				<div class="row" id="about1">
+					<div class="col-md-10 offset-1">
 						<div class="form-group">
-							<input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+							<h3 id="abouttitle">Contact Me</h3>
+							<input type="text" name="txtName" id ="name" class="form-control input-lg" placeholder="Your Name *" value="" />
 						</div>
 						<div class="form-group">
-							<input type="text" name="txtEmail" class="form-control" placeholder="Your Email *"
+							<input type="text" name="txtEmail" id="email" class="form-control" placeholder="Your Email *"
 								value="" />
 						</div>
 						<div class="form-group">
-							<input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
+							<input type="text" name="txtPhone" id="no" class="form-control" placeholder="Your Phone no*"
 								value="" />
 						</div>
+						
 						<div class="form-group">
-							<input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+							<textarea name="txtMsg" id="msg"class="form-control" placeholder="Your Message *"></textarea>
 						</div>
-					</div>
-					<div class="col-md-6">
 						<div class="form-group">
-							<textarea name="txtMsg" class="form-control" placeholder="Your Message *"
-								style="width: 100%; height: 150px;"></textarea>
+							<input type="submit" name="btnSubmit" id="submit" class="btnContact" value="Send Message" />
 						</div>
 					</div>
 				</div>
+			</div>
 			</form>
-		</div>
-	</div>
+		
 	<!-- End Contact Section -->
-
 	<!-- Footer -->
 	<footer class="page-footer font-small special-color-dark pt-4">
-
 		<!-- Footer Elements -->
 		<div class="container">
-	  
-		  <!-- Social buttons -->
-		  <ul class="list-unstyled list-inline text-center">
-			<li class="list-inline-item">
-			  <a class="btn-floating btn-fb mx-1">
-				<i class="fab fa-facebook-f"> </i>
-			  </a>
-			</li>
-			<li class="list-inline-item">
-			  <a class="btn-floating btn-tw mx-1">
-				<i class="fab fa-twitter"> </i>
-			  </a>
-			</li>
-			<li class="list-inline-item">
-			  <a class="btn-floating btn-gplus mx-1">
-				<i class="fab fa-google-plus-g"> </i>
-			  </a>
-			</li>
-			<li class="list-inline-item">
-			  <a class="btn-floating btn-li mx-1">
-				<i class="fab fa-linkedin-in"> </i>
-			  </a>
-			</li>
-			<li class="list-inline-item">
-			  <a class="btn-floating btn-dribbble mx-1">
-				<i class="fab fa-dribbble"> </i>
-			  </a>
-			</li>
-		  </ul>
-		  <!-- Social buttons -->
-	  
+
+			<!-- Social buttons -->
+			<ul class="list-unstyled list-inline text-center">
+				<li class="list-inline-item">
+					<a class="btn-floating btn-fb mx-1" href="https://github.com/Dipeshgoyal44">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-tw mx-1" href="https://twitter.com/Dipeshgoyal44">
+						<i class="fab fa-twitter"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-gplus mx-1" href="mailto:dipeshgoyal44@gmail.com">
+						<i class="fas fa-paper-plane"></i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/dipesh-goyal-256ab1193">
+						<i class="fab fa-linkedin-in"> </i>
+					</a>
+				</li>
+			</ul>
+			<!-- Social buttons -->
+
 		</div>
 		<!-- Footer Elements -->
-	  
+
 		<!-- Copyright -->
 		<div class="footer-copyright text-center py-3">© 2020 Copyright:
-		  <a href="https://nifty-dijkstra-2f564a.netlify.com/">Dipesh-Portfolio</a>
+			<a href="https://nifty-dijkstra-2f564a.netlify.com/">Dipesh-Portfolio</a>
 		</div>
 		<!-- Copyright -->
-	  
-	  </footer>
+
+	</footer>
+</div>
 	<!-- End Footer -->
 
 	<!--- Script Source Files -->
