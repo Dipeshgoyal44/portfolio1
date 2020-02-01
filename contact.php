@@ -5,4 +5,7 @@
     $telephone = $_POST['txtPhone']; // not required
     $comments = $_POST['txtMsg']; // required
     echo "$first_name";
+    echo "$email_from";
+    echo "$telephone";
+
   ?>
